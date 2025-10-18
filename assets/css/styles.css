@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* HERO */
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #6C63FF, #5B90FF, #FF6584);
+  overflow: hidden;
+}
+
+/* CONTACTO */
+.contacto {
+  background: linear-gradient(180deg, #0f1724 0%, #071022 100%);
+}
+
+/* BOTONES */
+.btn-light:hover {
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+  transition: all 0.1s ease;
+}
+
+.btn-success:hover {
+  background-color: #25D366;
+  opacity: 0.9;
+}
+
+/*TEXTO BOTONES NAVBAR */
+.navbar-nav .nav-link {
+  color: #1E1E2F;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6C63FF;
+}
+
+/* FOOTER */
+footer small {
+  line-height: 1.6;
+}
