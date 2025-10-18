@@ -1,0 +1,23 @@
+name: 🚀 Deploy to Donhost via FTP
+
+on:
+  push:
+    branches:
+      - main  # se ejecuta cada vez que haces push a main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.kreateltda.cl
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftp
+          port: 21
+          server-dir: /public_html/
